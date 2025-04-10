@@ -110,11 +110,11 @@ void realizarVenda(Venda vendas[], Cliente clientes[], Produto produtos[])
                 vendas[qtdVendas].idCliente = idCliente;
                 vendas[qtdVendas].idProduto = idProduto;
                 vendas[qtdVendas].quantProduto = qtdDesejada;
-                vendas[qtdVendas].valorTotal = qtdDesejada * produtos[i].valor;
+                vendas[qtdVendas].valorTotal = qtdDesejada * produtos[i].valor; //calculo do valor
 
                 printf("Venda realizada com sucesso! Valor total: %.2f\n", vendas[qtdVendas].valorTotal);
 
-                qtdVendas++;
+                qtdVendas++; //venda realizada
             }
             else
             {
